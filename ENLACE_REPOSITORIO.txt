@@ -1,0 +1,129 @@
+========================================
+REPOSITORIO GITHUB DEL PROYECTO
+========================================
+
+URL: https://github.com/erckjael/invensys-api
+
+Autor: Erckjael Salazar
+Programa: Analisis y desarrollo web
+Centro: SENA
+Evidencia: GA7-220501096-AA5-EV03
+Fecha: Noviembre 29, 2025
+
+========================================
+INSTRUCCIONES PARA CLONAR Y EJECUTAR
+========================================
+
+1. Clonar el repositorio:
+   git clone https://github.com/erckjael/invensys-api.git
+
+2. Entrar a la carpeta:
+   cd invensys-api
+
+3. Instalar dependencias:
+   npm install
+
+4. Configurar variables de entorno:
+   - Crear archivo .env en la raíz
+   - Agregar:
+     PORT=3000
+     MONGODB_URI=tu_url_de_mongodb_atlas
+     DB_NAME=invensys
+     NODE_ENV=development
+
+5. Ejecutar en desarrollo:
+   npm run dev
+
+6. Ejecutar en producción:
+   npm start
+
+7. Abrir en el navegador:
+   http://localhost:3000
+
+========================================
+REQUISITOS PREVIOS
+========================================
+
+- Node.js v14.0.0 o superior
+- npm v5.6 o superior
+- Cuenta en MongoDB Atlas
+- Git
+
+========================================
+TECNOLOGÍAS UTILIZADAS
+========================================
+
+Backend:
+- Node.js 20.x
+- Express 4.18.x
+- MongoDB Atlas
+- Mongoose 8.x
+
+Dependencias:
+- body-parser
+- cors
+- dotenv
+- nodemon (dev)
+
+========================================
+ENDPOINTS PRINCIPALES
+========================================
+
+Roles:
+- POST   /api/roles          - Crear rol
+- GET    /api/roles          - Listar roles
+- GET    /api/roles/:id      - Obtener rol
+- PUT    /api/roles/:id      - Actualizar rol
+- DELETE /api/roles/:id      - Eliminar rol
+
+Usuarios:
+- POST   /api/usuarios       - Crear usuario
+- GET    /api/usuarios       - Listar usuarios
+- GET    /api/usuarios/:id   - Obtener usuario
+- PUT    /api/usuarios/:id   - Actualizar usuario
+- DELETE /api/usuarios/:id   - Eliminar usuario
+
+========================================
+DOCUMENTACIÓN COMPLETA
+========================================
+
+Ver archivo: DOCUMENTACION_API.md
+
+========================================
+TESTING
+========================================
+
+Usar Postman para probar la API:
+1. Importar colección de Postman (si está disponible)
+2. O crear peticiones manualmente según la documentación
+
+========================================
+ESTRUCTURA DEL PROYECTO
+========================================
+
+invensys-api/
+├── models/
+│   ├── Usuario.js
+│   └── Rol.js
+├── routes/
+│   ├── usuarios.js
+│   └── roles.js
+├── config/
+│   └── database.js
+├── screenshots/
+├── .env
+├── .gitignore
+├── app.js
+├── package.json
+├── README.md
+└── DOCUMENTACION_API.md
+
+========================================
+CONTACTO
+========================================
+
+Para dudas o consultas:
+Email: [erckjael@gmail.com]
+GitHub: https://github.com/erckjael
+
+========================================
